@@ -5,14 +5,15 @@
 # Step 1:
 # This is your Docker ID/path
 # dockerpath=<>
-dockerpath=mostafaabdelrahman/boston-housing-prediction
+dockerpath="mostafaabdelrahman/boston-housing-prediction"
+deployment="udacity-prediction-app"
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run udacity-prediction-app\
+kubectl run $deployment\
     --generator=run-pod/v1\
     --image=$dockerpath\
-    --port=80 --labels app=udacity-prediction-app
+    --port=80 --labels app=$deployment
 
 # Step 3:
 # List kubernetes pods
@@ -20,5 +21,5 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward udacity-prediction-app 8000:80
+kubectl port-forward $deployment 8000:80
 
