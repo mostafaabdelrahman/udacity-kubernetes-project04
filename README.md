@@ -1,4 +1,4 @@
-<center> [![mostafaabdelrahman](https://circleci.com/gh/mostafaabdelrahman/udacity-kubernetes-project04.svg?style=svg)](https://app.circleci.com/pipelines/gh/mostafaabdelrahman/udacity-kubernetes-project04) </center>
+<div align="center"> [![mostafaabdelrahman](https://circleci.com/gh/mostafaabdelrahman/udacity-kubernetes-project04.svg?style=svg)](https://app.circleci.com/pipelines/gh/mostafaabdelrahman/udacity-kubernetes-project04) </div>
 
 # Project 4: Operationalize a Machine Learning Microservice API
 
@@ -38,10 +38,9 @@ You are given a pre-trained, `sklearn` model that has been trained to predict ho
 1. `app.py`             : flask python app to predict housing prices in Boston
 1. `output_txt_files`   :
         
-        directory contains :
-        
-            * `docker_out.txt`      : logging of running docker container when we executed `make_prediction.sh`
-            * `kubernetes_out.txt`  : logging of running Kubernetes deployment when we executed `make_prediction.sh`
+    directory contains :
+        * `docker_out.txt`      : logging of running docker container when we executed `make_prediction.sh`
+        * `kubernetes_out.txt`  : logging of running Kubernetes deployment when we executed `make_prediction.sh`
 1. `.circleci/config.yml` : CircleCI configuration file
 
 
