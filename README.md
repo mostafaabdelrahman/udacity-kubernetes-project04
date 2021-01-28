@@ -20,6 +20,7 @@ You are given a pre-trained, `sklearn` model that has been trained to predict ho
 
 * Create a virtualenv and activate it
 * Run `make install` to install the necessary dependencies
+* Run `make lint` to lint `app.py` and `Dockerfile`
 * Run using python: `python app.py`
 
 ### Containerize `app.py`
@@ -28,7 +29,7 @@ You are given a pre-trained, `sklearn` model that has been trained to predict ho
 2. Upload docker image to DockerHub: `./upload_docker.sh`
 3. Run in Kubernetes: `./run_kubernetes.sh`
 
-## Making prediction
+### Making prediction
 * While running `./run_docker.sh` script: In another terminal run `make_predictions.sh` to make house price predictions (output saved to `docker_out.txt`)
 * While running `./run_kubernetes.sh` script: In another terminal run `make_predictions.sh` to make house price predictions (output saved to `kubernetes_out.txt`)
 
@@ -36,19 +37,19 @@ You are given a pre-trained, `sklearn` model that has been trained to predict ho
 
 ## Repository files description
 
+1. `app.py`             : flask python app to predict housing prices in Boston
+1. `requirements.txt`   : Python requirements module list for app.py
+1. `Makefile`           : Makefile that used to build depencies and linting
+1. `make_prediction.sh` : shell script to send predition request to flask app
 1. `run_docker.sh`      : shell script to build and run docker container for app.py
 1. `upload_docker.sh`   : shell script to upload docker image to DockerHub
 1. `run_kubernetes.sh`  : shell script to deploy docker image to Kubernetes cluster
-1. `requirements.txt`   : Python requirements module list for app.py
-1. `make_prediction.sh` : shell script to send predition request to flask app
-1. `Makefile`           : Makefile that used to build depencies and linting
 1. `Dockerfile`         : Dockerfile to build our docker image for app.py
-1. `app.py`             : flask python app to predict housing prices in Boston
+1. `.circleci/config.yml` : CircleCI configuration file
 1. `output_txt_files`   :
         
     directory contains :
         * `docker_out.txt`      : logging of running docker container when we executed `make_prediction.sh`
         * `kubernetes_out.txt`  : logging of running Kubernetes deployment when we executed `make_prediction.sh`
-1. `.circleci/config.yml` : CircleCI configuration file
 
 
