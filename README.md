@@ -1,6 +1,6 @@
 <div align="center">
 
-    [![mostafaabdelrahman](https://circleci.com/gh/mostafaabdelrahman/udacity-kubernetes-project04.svg?style=svg)](https://app.circleci.com/pipelines/gh/mostafaabdelrahman/udacity-kubernetes-project04)
+[![mostafaabdelrahman](https://circleci.com/gh/mostafaabdelrahman/udacity-kubernetes-project04.svg?style=svg)](https://app.circleci.com/pipelines/gh/mostafaabdelrahman/udacity-kubernetes-project04)
 
 </div>
 
