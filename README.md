@@ -49,6 +49,7 @@ You are given a pre-trained, `sklearn` model that has been trained to predict ho
 1. `output_txt_files`   :
         
     directory contains :
+    
         * `docker_out.txt`      : logging of running docker container when we executed `make_prediction.sh`
         * `kubernetes_out.txt`  : logging of running Kubernetes deployment when we executed `make_prediction.sh`
 
