@@ -1,4 +1,4 @@
-<center>[![mostafaabdelrahman](https://circleci.com/gh/mostafaabdelrahman/udacity-kubernetes-project04.svg?style=svg)](https://app.circleci.com/pipelines/gh/mostafaabdelrahman/udacity-kubernetes-project04)</center>
+<center> [![mostafaabdelrahman](https://circleci.com/gh/mostafaabdelrahman/udacity-kubernetes-project04.svg?style=svg)](https://app.circleci.com/pipelines/gh/mostafaabdelrahman/udacity-kubernetes-project04) </center>
 
 # Project 4: Operationalize a Machine Learning Microservice API
 
@@ -33,11 +33,13 @@ You are given a pre-trained, `sklearn` model that has been trained to predict ho
 1. `run_kubernetes.sh`  : shell script to deploy docker image to Kubernetes cluster
 1. `requirements.txt`   : Python requirements module list for app.py
 1. `make_prediction.sh` : shell script to send predition request to flask app
-1. `Makefile`           :
-1. `Dockerfile`         :
+1. `Makefile`           : Makefile that used to build depencies and linting
+1. `Dockerfile`         : Dockerfile to build our docker image for app.py
 1. `app.py`             : flask python app to predict housing prices in Boston
 1. `output_txt_files`   :
-        direcotry contain :
+        
+        directory contains :
+        
             * `docker_out.txt`      : logging of running docker container when we executed `make_prediction.sh`
             * `kubernetes_out.txt`  : logging of running Kubernetes deployment when we executed `make_prediction.sh`
 1. `.circleci/config.yml` : CircleCI configuration file
