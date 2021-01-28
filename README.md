@@ -1,5 +1,7 @@
 <div align="center">
+
     [![mostafaabdelrahman](https://circleci.com/gh/mostafaabdelrahman/udacity-kubernetes-project04.svg?style=svg)](https://app.circleci.com/pipelines/gh/mostafaabdelrahman/udacity-kubernetes-project04)
+
 </div>
 
 # Project 4: Operationalize a Machine Learning Microservice API
@@ -25,6 +27,10 @@ You are given a pre-trained, `sklearn` model that has been trained to predict ho
 1. Make docker image, then run it: `./run_docker.sh`
 2. Upload docker image to DockerHub: `./upload_docker.sh`
 3. Run in Kubernetes: `./run_kubernetes.sh`
+
+## Making prediction
+* While running `./run_docker.sh` script: In another terminal run `make_predictions.sh` to make house price predictions (output saved to `docker_out.txt`)
+* While running `./run_kubernetes.sh` script: In another terminal run `make_predictions.sh` to make house price predictions (output saved to `kubernetes_out.txt`)
 
 ---
 
