@@ -1,4 +1,6 @@
-<div align="center"> [![mostafaabdelrahman](https://circleci.com/gh/mostafaabdelrahman/udacity-kubernetes-project04.svg?style=svg)](https://app.circleci.com/pipelines/gh/mostafaabdelrahman/udacity-kubernetes-project04) </div>
+<div align="center">
+    [![mostafaabdelrahman](https://circleci.com/gh/mostafaabdelrahman/udacity-kubernetes-project04.svg?style=svg)](https://app.circleci.com/pipelines/gh/mostafaabdelrahman/udacity-kubernetes-project04)
+</div>
 
 # Project 4: Operationalize a Machine Learning Microservice API
 
