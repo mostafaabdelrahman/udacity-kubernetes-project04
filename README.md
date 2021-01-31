@@ -35,6 +35,24 @@ You are given a pre-trained, `sklearn` model that has been trained to predict ho
 
 ---
 
+## Bonus:
+
+### Make the kubernetes deployment work on multiple cloud platforms: i.e. GCP, AWS, and Azure.
+
+Created EKS cluster on AWS using below command:
+```
+eksctl create cluster --name udacity-eks --region us-west-2  --zones=us-west-2a,us-west-2b \
+--nodegroup-name worker-nodes --node-type t2.micro --nodes 2 --nodes-min 2 --nodes-max 2 \
+--ssh-access --ssh-public-key webapp-key
+```
+### Record a demo video that shows the scale up and scale down characteristics of the kubernetes application.
+
+* Created a deployment yaml file `udacity-prediction-app-deployment.yaml` for the application
+* Created a setup script `run_kubernetes_deployment.sh` to apply the deployment
+* File `kubernetes-deployment-scaling.mp4` is a demo for scaling up and down the application.
+
+---
+
 ## Repository files description
 
 1. `app.py`             : flask python app to predict housing prices in Boston
@@ -54,4 +72,7 @@ You are given a pre-trained, `sklearn` model that has been trained to predict ho
 
     * `kubernetes_out.txt`  : logging of running Kubernetes deployment when we executed `make_prediction.sh`
 
-
+Bonus
+1. `udacity-prediction-app-deployment.yaml` : Kubernetes deployment file
+1. `run_kubernetes_deployment.sh`           : Apply kuberneted deployment and expose service
+1. `kubernetes-deployment-scaling.mp4`      : Demo for Kubeneted scaling

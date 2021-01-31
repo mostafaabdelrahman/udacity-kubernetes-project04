@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: udacity-prediction-app
+  labels:
+    app: udacity-prediction-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: udacity-prediction-app
+  template:
+    metadata:
+      labels:
+        app: udacity-prediction-app
+    spec:
+      containers:
+      - name: nginx
+        image: mostafaabdelrahman/boston-housing-prediction:latest
+        ports:
+        - containerPort: 8000
