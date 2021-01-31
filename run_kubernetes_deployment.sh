@@ -10,4 +10,4 @@ kubectl get pods
 kubectl expose deployment/udacity-prediction-app --port 8000 --target-port 80
 
 # Scaling to be shown in demo video
-# kubectl scale deployment/udacity-prediction-app --replicas=3
+# kubectl scale deployment/udacity-prediction-app --replicas=2
