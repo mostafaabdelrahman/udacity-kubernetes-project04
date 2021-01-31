@@ -19,7 +19,7 @@ You are given a pre-trained, `sklearn` model that has been trained to predict ho
 ### Run `app.py` locally
 
 * Create a virtualenv and activate it
-* Run `make install` to install the necessary dependencies
+* Run `make install` to install the necessary dependencies (python modeuls, hadolint)
 * Run `make lint` to lint `app.py` and `Dockerfile`
 * Run using python: `python app.py`
 
