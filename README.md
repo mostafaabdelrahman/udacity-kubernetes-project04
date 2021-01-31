@@ -55,7 +55,7 @@ eksctl create cluster --name udacity-eks --region us-west-2  --zones=us-west-2a,
 
 ### Record a demo video that shows the scale up and scale down characteristics of the kubernetes application.
 
-* File `kubernetes-deployment-scaling.mp4` is a demo for scaling up and down the application.
+* File ['kubernetes-deployment-scaling.mp4'](kubernetes-deployment-scaling.mp4) is a demo for scaling up and down the application.
 
 ---
 
